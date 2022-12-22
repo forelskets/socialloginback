@@ -540,7 +540,7 @@ const Landing = (props) => {
           </div>
         </div>
       </div> */}
-      <button
+      <a
         className="floating-logo"
         onClick={() => {
           setIsModalOpen(true);
@@ -551,7 +551,7 @@ const Landing = (props) => {
           alt="logo"
           style={{ width: "50px", height: "50px", objectFit: "contain" }}
         />
-      </button>
+      </a>
       {_modelView()}
       <FooterMain />
       <ProfileIncompleteModal

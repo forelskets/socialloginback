@@ -8,6 +8,7 @@ import { getMemoizedAuthenticationData } from "../../redux/selectors/authenticat
 
 import { drawerAction } from "../../redux/actions/authentication";
 import MobileSidebar from "../../common/mobilesidebar";
+import Icon1 from "../../common/icon";
 import HeaderMain from "../../common/header";
 import FooterMain from "../../common/footer";
 import { Col, Row } from "antd";
@@ -425,6 +426,8 @@ const SearchResult = (props) => {
         )}
       </div>
       <FooterMain />
+
+      <Icon1 handleClick={handlewClick} />
     </div>
   );
 };

@@ -9,6 +9,7 @@ import { drawerAction } from "../../redux/actions/authentication";
 import MobileSidebar from "../../common/mobilesidebar";
 import HeaderMain from "../../common/header";
 import FooterMain from "../../common/footer";
+import Icon1 from "../../common/icon";
 import { Button, Col, Row, Table, Select, Tag, Space, Input } from "antd";
 import { useLocation, useNavigate } from "react-router";
 
@@ -375,6 +376,8 @@ const Traveller = () => {
         </div>
       </div>
       <FooterMain />
+
+      <Icon1 handleClick={handlewClick} />
     </div>
   );
 };

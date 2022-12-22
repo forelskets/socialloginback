@@ -10,6 +10,7 @@ import { getMemoizedAuthenticationData } from "../../redux/selectors/authenticat
 import { drawerAction } from "../../redux/actions/authentication";
 import MobileSidebar from "../../common/mobilesidebar";
 import HeaderMain from "../../common/header";
+import Icon1 from "../../common/icon";
 import FooterMain from "../../common/footer";
 import { appConstants } from "../../themes/appConstant";
 const { Option } = Select;
@@ -240,6 +241,7 @@ const Facts = (props) => {
         </div>
       </div>
       <FooterMain />
+      <Icon1 handleClick={handlewClick} />
     </div>
   );
 };

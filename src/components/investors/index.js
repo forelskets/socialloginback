@@ -8,6 +8,7 @@ import HeaderMain from "../../common/header";
 import { getMemoizedAuthenticationData } from "../../redux/selectors/authentication";
 import { drawerAction } from "../../redux/actions/authentication";
 import FooterMain from "../../common/footer";
+import Icon1 from "../../common/icon";
 
 const Investors = (props) => {
   console.log("welcome investors screen.");
@@ -98,6 +99,7 @@ const Investors = (props) => {
         </div>
       </div>
       <FooterMain />
+      <Icon1 handleClick={handlewClick} />
     </div>
   );
 };

@@ -22,7 +22,9 @@ import { captchaCode } from "../../themes/appConstant";
 import { toast } from "react-nextjs-toast";
 import AppleLogin from "../../common/AppleLogin";
 import GoogleLogin from "../../common/GoogleLogin";
+import { drawerAction } from "../../redux/actions/authentication";
 import FacebookLogin from "../../common/FacebookLogin";
+import Icon1 from "../../common/icon";
 
 const Option = { Select };
 
@@ -56,6 +58,8 @@ const Register = (props) => {
   const [password, setPassword] = useState("");
   const [ConfirmPassword, setConfirmPassword] = useState("");
 
+  const authenticationData = useSelector(getMemoizedAuthenticationData);
+  const { forgotPasswordSuccess, drawerState } = authenticationData;
   const registerData = useSelector(getMemoizedAuthenticationData);
   const { registerSuccess } = registerData;
   const [userImage, setUserImage] = useState("");
@@ -105,6 +109,10 @@ const Register = (props) => {
 
   const handleOk = () => {
     setIsModalVisible(false);
+  };
+  const handlewClick = () => {
+    let action = drawerState ? false : true;
+    dispatch(drawerAction(action, "drawerState"));
   };
 
   const handleCancel = () => {
@@ -1043,6 +1051,8 @@ const Register = (props) => {
         </div>
       </div>
       {_modalView()}
+
+      <Icon1 handleClick={handlewClick} />
     </div>
   );
 };

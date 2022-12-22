@@ -12,6 +12,7 @@ import { drawerAction } from "../../redux/actions/authentication";
 import MobileSidebar from "../../common/mobilesidebar";
 import HeaderMain from "../../common/header";
 import FooterMain from "../../common/footer";
+import Icon1 from "../../common/icon";
 import { appConstants } from "../../themes/appConstant";
 const Home = (props) => {
   const navigate = useNavigate();
@@ -176,6 +177,7 @@ const Home = (props) => {
       </div>
 
       <FooterMain />
+      <Icon1 handleClick={handlewClick} />
       <ProfileIncompleteModal
         open={open}
         setOpen={setOpen}

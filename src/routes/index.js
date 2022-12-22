@@ -15,7 +15,6 @@ import ResetPassword from "../components/resetPassword";
 import NewBooking from "../components/newBookings";
 import MyBookings from "../components/myBookings";
 import Profile from "../components/myProfile";
-import PurchaseOyseterCard from "../components/purchaseOyster";
 import PurchaseOyseter from "../components/purchaseOysterCard";
 import SearchBooking from "../components/searchBookings";
 import BookingDetails from "../components/myBookings/bookingDetails";
@@ -43,6 +42,7 @@ import Traveller from "../components/traveller";
 import Basket from "../components/basket";
 import BasketFlexi from "../components/basketFlexi";
 import FullFillment from "../components/fullfillment";
+import Cookies from "../components/cookies";
 import Delivery from "../components/delivery";
 import DeliveryFlexi from "../components/deliveryFlexi";
 import PaymentOrder from "../components/paymentOrder";
@@ -101,6 +101,7 @@ function CommonRoutes() {
         <Route exact path="/fullfillment" element={<FullFillment />} />
         <Route exact path="/paymentOrder" element={<PaymentOrder />} />
         <Route exact path="/orderManager" element={<OrderManager />} />
+        <Route exact path="/cookiespolicy" element={<Cookies />} />
 
         {/*Public Route without localStorage only */}
         <Route

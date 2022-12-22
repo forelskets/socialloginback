@@ -49,58 +49,11 @@ const PrivacyPolicy = (props) => {
           <div className="">
             <div class="line-text_text investors">
               <p>
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                used in laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. It usually begins
-                with:
-              </p>
-              <p>
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                used in laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. It usually begins
-                with:
-              </p>
-              <p>
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                used in laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. It usually begins
-                with:
-              </p>
-              <p>
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                used in laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. Lorem ipsum, or
-                lipsum as it is sometimes known, is dummy text used in laying
-                out print, graphic or web designs. The passage is attributed to
-                an unknown typesetter in the 15th century who is thought to have
-                scrambled parts of Cicero's De Finibus Bonorum et Malorum for
-                use in a type specimen book. It usually begins with: Lorem
-                ipsum, or lipsum as it is sometimes known, is dummy text used in
-                laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. It usually begins
-                with: Lorem ipsum, or lipsum as it is sometimes known, is dummy
-                text used in laying out print, graphic or web designs. The
-                passage is attributed to an unknown typesetter in the 15th
-                century who is thought to have scrambled parts of Cicero's De
-                Finibus Bonorum et Malorum for use in a type specimen book. It
-                usually begins with:
-                <br />
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                used in laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. It usually begins
-                with:
+                Welcome to Passengerhub’s Privacy Policy. When you use our
+                services, you're trusting us with your information. This Privacy
+                Policy will inform you as to how we look after your personal
+                data when you use our services. We understand this is a big
+                responsibility and we work hard to protect your personal data.
               </p>
             </div>
           </div>

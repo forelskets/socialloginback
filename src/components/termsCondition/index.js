@@ -1,5 +1,5 @@
-import React, {  useEffect } from "react";
-import {  Select } from "antd";
+import React, { useEffect } from "react";
+import { Select } from "antd";
 import { useDispatch, useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import { getMemoizedAuthenticationData } from "../../redux/selectors/authentication";
@@ -45,58 +45,21 @@ const TermsConditions = (props) => {
           <div className="">
             <div class="line-text_text investors">
               <p>
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                used in laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. It usually begins
-                with:
+                Last updated on 19th October 2022 These Terms and Conditions
+                include information about our booking services and on how you
+                can manage your booking including about changes, refunds and
+                cancellations and about payment methods. Just to note when we
+                capitalise ‘Terms and Conditions’ it’s because we’re talking
+                about ours, the ones you’re reading right now, and when it’s
+                lowercase that means we’re talking about ones separate to these,
+                like terms and conditions of the operators or third-parties.
               </p>
               <p>
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                used in laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. It usually begins
-                with:
-              </p>
-              <p>
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                used in laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. It usually begins
-                with:
-              </p>
-              <p>
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                used in laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. Lorem ipsum, or
-                lipsum as it is sometimes known, is dummy text used in laying
-                out print, graphic or web designs. The passage is attributed to
-                an unknown typesetter in the 15th century who is thought to have
-                scrambled parts of Cicero's De Finibus Bonorum et Malorum for
-                use in a type specimen book. It usually begins with: Lorem
-                ipsum, or lipsum as it is sometimes known, is dummy text used in
-                laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. It usually begins
-                with: Lorem ipsum, or lipsum as it is sometimes known, is dummy
-                text used in laying out print, graphic or web designs. The
-                passage is attributed to an unknown typesetter in the 15th
-                century who is thought to have scrambled parts of Cicero's De
-                Finibus Bonorum et Malorum for use in a type specimen book. It
-                usually begins with:
-                <br />
-                Lorem ipsum, or lipsum as it is sometimes known, is dummy text
-                used in laying out print, graphic or web designs. The passage is
-                attributed to an unknown typesetter in the 15th century who is
-                thought to have scrambled parts of Cicero's De Finibus Bonorum
-                et Malorum for use in a type specimen book. It usually begins
-                with:
+                For our French customers we’d like to draw your attention to
+                section 13, for our American customers we’d like to draw your
+                attention to section 14, and for our Italian customers, we’d
+                like to draw your attention to section 15, as there’s some
+                important info there that relates just to you.
               </p>
             </div>
           </div>

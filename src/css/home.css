@@ -1182,7 +1182,7 @@ textarea.form-control {
   width: 100%;
 }
 .train_div .text-input-filed label {
-  width: 224px;
+  width: 189px;
   margin-bottom: 0;
 }
 .train_div .text {
@@ -1835,20 +1835,21 @@ button.button.text.color_diff {
   margin-top: 20px;
 }
 .wapper-Login .password_small {
-  padding: 70px 58px 80px 25px;
+  padding: 70px 58px 80px 75px;
   min-height: 100vh;
   height: 100%;
 }
 
 .wapper-Login .password_small.custom_padd {
-  padding: 47px 58px 80px 25px;
+  padding: 47px 58px 80px 75px;
 }
 .slick-slider.slick-initialized {
-  min-height: 100vh;
-  height: 100%;
+  min-height: 50vh;
+  height: 80%;
 }
 .wapper-Login .slick-dots li button:before {
   color: black;
+  margin-bottom: 0px;
   font-size: 14px;
   opacity: 1;
 }
@@ -1909,7 +1910,7 @@ button.button.text.color_diff {
   padding-right: 41px;
 }
 .register_i .password_small {
-  padding: 47px 7px 10px 25px;
+  padding: 47px 7px 10px 80px;
 }
 h2.line.billings_etxt {
   margin-top: 47px;
@@ -2685,6 +2686,7 @@ input[type="text"] {
 
 .color-error {
   color: red;
+  font-size: 14px;
 }
 
 .wrapper_register {
@@ -3137,7 +3139,7 @@ button.button.text.season_tkt_btn {
   -webkit-box-pack: center;
   justify-content: center;
   height: 64px;
-  left: 40px;
+  left: 20px;
   padding: 0px;
   position: fixed;
   right: initial;

@@ -15,10 +15,10 @@ const FooterMain = () => {
     <div>
       <div className="footer">
         <div className="container-fluid">
-          <div style={{ marginBottom: "-40px" }}>
+          <div style={{ marginBottom: "-40px", marginLeft: "130px" }}>
             <h5>Online Payments Methods</h5>
           </div>
-          <div style={{ marginBottom: "-40px" }}>
+          <div style={{ marginBottom: "-40px", marginLeft: "150px" }}>
             <img
               src={images.payment}
               style={{ marginLeft: "250px", height: "30px", width: "200px" }}
@@ -32,19 +32,7 @@ const FooterMain = () => {
           </div>
 
           <div className="row d-flex footer-draw">
-            <div className="">
-              <div
-                class="wrapper footers icons-footer"
-                style={{ textAlign: "right", marginLeft: "50px" }}
-              >
-                <h4>Follow us</h4>
-
-                <img src={images.fb} style={{ width: "30px" }} />
-                <img src={images.tw} style={{ width: "30px" }} />
-                <img src={images.youtube} style={{ width: "30px" }} />
-              </div>
-            </div>
-            <div className="">
+            <div className="" style={{ marginLeft: "150px" }}>
               <div class="wrapper footers first_text">
                 <h4>In the office</h4>
                 <ul className="lisit-trends">
@@ -78,6 +66,11 @@ const FooterMain = () => {
                       Privacy Policy
                     </Link>
                   </li>
+                  <li>
+                    <Link className="footer_links" to="/cookiespolicy">
+                      Cookie Policy
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -99,10 +92,20 @@ const FooterMain = () => {
               </div>
             </div>
 
-            <div className="">
+            <div className="" style={{ marginRight: "150px" }}>
               <div class="wrapper footers">
                 <img src={images.logohome} style={{ width: "" }} />
-                <h2 className="black-line">Subject to status. Over 18 only.</h2>
+                {/* <h2 className="black-line">Subject to status. Over 18 only.</h2> */}
+              </div>
+              <div
+                class="wrapper footers icons-footer pt-5"
+                style={{ textAlign: "Center" }}
+              >
+                <h4>Follow us</h4>
+
+                <img src={images.fb} style={{ width: "30px" }} />
+                <img src={images.tw} style={{ width: "30px" }} />
+                <img src={images.youtube} style={{ width: "30px" }} />
               </div>
             </div>
           </div>

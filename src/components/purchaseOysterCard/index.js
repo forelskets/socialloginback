@@ -145,7 +145,7 @@ const PurchaseOyster = (props) => {
       <HeaderMain handleClick={handlewClick} />
       <div className="mobileabout oyster_card_pic">
         <div className="container-fluid spacert">
-          <h3>Purchase Oyster Card</h3>
+          <h3>Apply Oyster Card</h3>
         </div>
       </div>
       <div className="press password_small">

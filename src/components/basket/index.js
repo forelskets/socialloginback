@@ -10,6 +10,7 @@ import { CheckCircleFilled, CloseCircleFilled } from "@ant-design/icons";
 import { drawerAction } from "../../redux/actions/authentication";
 import MobileSidebar from "../../common/mobilesidebar";
 import HeaderMain from "../../common/header";
+import Icon1 from "../../common/icon";
 import FooterMain from "../../common/footer";
 import { Button, Col, Row, Modal } from "antd";
 import { useLocation, useNavigate } from "react-router";
@@ -341,6 +342,8 @@ const Basket = () => {
       </div>
 
       <FooterMain />
+
+      <Icon1 handleClick={handlewClick} />
       {_Modal()}
     </div>
   );

@@ -19,6 +19,7 @@ import {
 import MobileSidebar from "../../common/mobilesidebar";
 import HeaderMain from "../../common/header";
 import FooterMain from "../../common/footer";
+import Icon1 from "../../common/icon";
 import { appConstants } from "../../themes/appConstant";
 import { getMemoizedNewBookingsData } from "../../redux/selectors/newBookings";
 import { getMemoizedSeasonTicketsData } from "../../redux/selectors/seasonTickets";
@@ -545,7 +546,7 @@ const NewBooking = (props) => {
                           <div className="col-sm-12">
                             <div className="text-input-filed">
                               <div className="first-div-item">
-                                <label style={{ width: "190px" }}>
+                                <label style={{ width: "170px" }}>
                                   {appConstants.StationName}
                                 </label>
                                 <div className="text">
@@ -646,7 +647,7 @@ const NewBooking = (props) => {
                               <div className="number_vlue">
                                 <div className="first-div-item item-count">
                                   <div className="first-i">
-                                    <label style={{ width: "170px" }}>
+                                    <label style={{ width: "150px" }}>
                                       {appConstants.AdultCount}
                                     </label>
                                     <div className="number-input">
@@ -738,36 +739,33 @@ const NewBooking = (props) => {
                                 <div></div>
                               </div>
                               {/* <input ty */}
-                              <div className="first-div-item">
-                                <label>{appConstants.Leave}</label>
+                              <div className="first-div-item time_data">
+                                <label style={{ marginLeft: "0px" }}>
+                                  {appConstants.Time}
+                                </label>
                                 <div className="text data-row">
-                                  <Select
-                                    className="form-control"
-                                    placeholder={appConstants.Leave}
-                                    name="singleLeave"
+                                  <TimePicker
+                                    placeholder={appConstants.timeformat}
+                                    inputReadOnly
+                                    format="HH:mm"
+                                    name="singleTime"
                                     value={
-                                      values?.singleLeave
-                                        ? values?.singleLeave
+                                      values.singleTime
+                                        ? moment(values.singleTime, "HH:mm")
                                         : null
                                     }
-                                    onChange={(e) =>
+                                    onChange={(e, v) => {
+                                      // console.log("this is data = ", e, "new = ", v)
                                       handleSelectChange(
                                         setFieldValue,
-                                        e,
-                                        "singleLeave"
-                                      )
-                                    }
-                                  >
-                                    <Option value="leaveAfter" title=" ">
-                                      Leave After
-                                    </Option>
-                                    <Option value="leaveBefore" title=" ">
-                                      Leave Before
-                                    </Option>
-                                  </Select>
-                                  {touched.singleLeave && errors.singleLeave ? (
+                                        v,
+                                        "singleTime"
+                                      );
+                                    }}
+                                  />
+                                  {touched.singleTime && errors.singleTime ? (
                                     <div class="color-error">
-                                      {errors.singleLeave}
+                                      {errors.singleTime}
                                     </div>
                                   ) : null}
                                 </div>
@@ -777,7 +775,12 @@ const NewBooking = (props) => {
                           <div className="col-sm-6">
                             <div className="text-input-filed">
                               <div className="first-div-item ">
-                                <label style={{ marginLeft: "40px" }}>
+                                <label
+                                  style={{
+                                    marginLeft: "40px",
+                                    marginRight: "-10px",
+                                  }}
+                                >
                                   {appConstants.Date}
                                 </label>
                                 <div className="text">
@@ -894,34 +897,43 @@ const NewBooking = (props) => {
                                   </div>
                                 </div>
                               </div>
-
-                              <div className="first-div-item time_data">
-                                <label style={{ marginLeft: "40px" }}>
-                                  {appConstants.Time}
+                              <div className="first-div-item">
+                                <label
+                                  style={{
+                                    marginLeft: "40px",
+                                    marginRight: "-10px",
+                                  }}
+                                >
+                                  {appConstants.Leave}
                                 </label>
                                 <div className="text data-row">
-                                  <TimePicker
-                                    placeholder={appConstants.timeformat}
-                                    inputReadOnly
-                                    format="HH:mm"
-                                    name="singleTime"
+                                  <Select
+                                    className="form-control"
+                                    placeholder={appConstants.Leave}
+                                    name="singleLeave"
                                     value={
-                                      values.singleTime
-                                        ? moment(values.singleTime, "HH:mm")
+                                      values?.singleLeave
+                                        ? values?.singleLeave
                                         : null
                                     }
-                                    onChange={(e, v) => {
-                                      // console.log("this is data = ", e, "new = ", v)
+                                    onChange={(e) =>
                                       handleSelectChange(
                                         setFieldValue,
-                                        v,
-                                        "singleTime"
-                                      );
-                                    }}
-                                  />
-                                  {touched.singleTime && errors.singleTime ? (
+                                        e,
+                                        "singleLeave"
+                                      )
+                                    }
+                                  >
+                                    <Option value="leaveAfter" title=" ">
+                                      Leave After
+                                    </Option>
+                                    <Option value="leaveBefore" title=" ">
+                                      Leave Before
+                                    </Option>
+                                  </Select>
+                                  {touched.singleLeave && errors.singleLeave ? (
                                     <div class="color-error">
-                                      {errors.singleTime}
+                                      {errors.singleLeave}
                                     </div>
                                   ) : null}
                                 </div>
@@ -1125,7 +1137,7 @@ const NewBooking = (props) => {
                           Season<span className="color-d"> Ticket</span>
                         </h2> */}
                         <div className="row error_data">
-                          <div className="col-sm-6">
+                          <div className="col-sm-7">
                             <div className="text-input-filed">
                               <div className="first-div-item ">
                                 <label>Station Name</label>
@@ -1279,7 +1291,7 @@ const NewBooking = (props) => {
                               </div> */}
                             </div>
                           </div>
-                          <div className="col-sm-6">
+                          <div className="col-sm-5">
                             <div className="text-input-filed">
                               <div className="first-div-item">
                                 <label className="date_space">Start Date</label>
@@ -1443,7 +1455,7 @@ const NewBooking = (props) => {
                           Flexi<span className="color-d"> Ticket</span>
                         </h2> */}
                         <div className="row error_data">
-                          <div className="col-sm-6">
+                          <div className="col-sm-7">
                             <div className="text-input-filed">
                               <div className="first-div-item ">
                                 <label>Station Name</label>
@@ -1680,7 +1692,7 @@ const NewBooking = (props) => {
                               </div> */}
                             </div>
                           </div>
-                          <div className="col-sm-6">
+                          <div className="col-sm-5">
                             <div className="text-input-filed">
                               <div className="first-div-item">
                                 <label className="date_space">Start Date</label>
@@ -1860,6 +1872,8 @@ const NewBooking = (props) => {
         </div>
       </div>
       <FooterMain />
+
+      <Icon1 handleClick={handlewClick} />
       {_modalView()}
     </div>
   );

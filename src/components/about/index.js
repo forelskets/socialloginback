@@ -5,6 +5,7 @@ import images from "../../themes/appImage";
 import { Collapse } from "antd";
 import MobileSidebar from "../../common/mobilesidebar";
 import HeaderMain from "../../common/header";
+import Icon1 from "../../common/icon";
 import { getMemoizedAuthenticationData } from "../../redux/selectors/authentication";
 import { drawerAction } from "../../redux/actions/authentication";
 import FooterMain from "../../common/footer";
@@ -153,8 +154,8 @@ const AboutUs = (props) => {
         <div className="container">
           <h2 className="line">
             We’re here to
-            <span className="color-d"> disrupt</span> your commute.  <br/>In a good
-            way.
+            <span className="color-d"> disrupt</span> your commute. <br />
+            In a good way.
           </h2>
         </div>
       </div>
@@ -162,7 +163,7 @@ const AboutUs = (props) => {
       <div className="about-text ">
         <div className="container">
           <div className="row text-black">
-          <div className="col-sm-4">
+            <div className="col-sm-4">
               <h1
                 style={{
                   textAlign: "center",
@@ -184,13 +185,12 @@ const AboutUs = (props) => {
                   textAlign: "center",
                 }}
               >
-                The number of train trips
-the average person
-makes each year
+                The number of train trips the average person makes each year
               </p>
             </div>
             <div className="col-sm-4">
-              <h1 className="color2"
+              <h1
+                className="color2"
                 style={{
                   textAlign: "center",
                   fontSize: "40px",
@@ -263,6 +263,7 @@ makes each year
                 each found themselves travelling to training grounds four days a
                 week, as well as matches at weekends.
               </p>
+              <br />
               <p
                 className="text-about"
                 style={{
@@ -280,7 +281,15 @@ makes each year
               </p>
             </div>
             <div className="col-sm-6">
-                        <img src={images.about1} style={{ paddingTop: '60px' , width: '400px' }} />
+              <img
+                src={images.about1}
+                style={{
+                  width: "450px",
+                  height: "380px",
+                  border: "10px solid",
+                  color: "#00D9B2",
+                }}
+              />
             </div>
           </div>
         </div>
@@ -290,8 +299,15 @@ makes each year
         <div className="container">
           <div className="row text-black">
             <div className="col-sm-6">
-            <img src={images.about2} style={{ paddingTop: '20px' , width: '400px' }} />
-
+              <img
+                src={images.about2}
+                style={{
+                  paddingTop: "5px",
+                  width: "400px",
+                  border: "10px solid",
+                  color: "#00D9B2",
+                }}
+              />
             </div>
             <div className="col-sm-6">
               <p
@@ -361,6 +377,7 @@ makes each year
       </div>
 
       <FooterMain />
+      <Icon1 handleClick={handlewClick} />
     </div>
   );
 };

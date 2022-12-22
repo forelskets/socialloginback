@@ -11,6 +11,7 @@ import { drawerAction } from "../../redux/actions/authentication";
 import MobileSidebar from "../../common/mobilesidebar";
 import HeaderMain from "../../common/header";
 import FooterMain from "../../common/footer";
+import Icon1 from "../../common/icon";
 import { isObjEmpty } from "../../common/utils";
 import {
   searchTrainsListInitiate,
@@ -267,7 +268,7 @@ const SearchBooking = (props) => {
       <div className="press" style={{ marginTop: "60px" }}>
         <div className="container-fluid">
           <h2 className="line">Search Result</h2>
-     
+
           <div className="search-result stationsName_responsive_view">
             <div className="row">
               {searchedData?.ticketType == "roundTrip" ? (
@@ -996,6 +997,8 @@ const SearchBooking = (props) => {
         </div>
       </div>
       <FooterMain />
+
+      <Icon1 handleClick={handlewClick} />
     </div>
   );
 };

@@ -11,6 +11,7 @@ import {
   updateAuthenticationState,
 } from "../../redux/actions/authentication";
 import { getMemoizedAuthenticationData } from "../../redux/selectors/authentication";
+import { drawerAction } from "../../redux/actions/authentication";
 import { Layout, Menu, Modal } from "antd";
 import images from "../../themes/appImage";
 import { Collapse } from "antd";
@@ -24,6 +25,7 @@ import { removeEmojis } from "../../common/utils";
 import { toast } from "react-nextjs-toast";
 import FacebookLogin from "../../common/FacebookLogin";
 import GoogleLogin from "../../common/GoogleLogin";
+import Icon1 from "../../common/icon";
 import AppleLogin from "../../common/AppleLogin";
 
 const Login = (props) => {
@@ -35,7 +37,7 @@ const Login = (props) => {
   const parsedData = state?.data ? JSON.parse(state.data) : null;
 
   const authenticationData = useSelector(getMemoizedAuthenticationData);
-  const { forgotPasswordSuccess, forgotPasswordLoader } = authenticationData;
+  const { forgotPasswordSuccess, drawerState } = authenticationData;
 
   const [captcha, setCaptcha] = useState(false);
   useLayoutEffect(() => {
@@ -93,6 +95,10 @@ const Login = (props) => {
     if (values.length > 0) {
       setMask(!mask);
     }
+  };
+  const handlewClick = () => {
+    let action = drawerState ? false : true;
+    dispatch(drawerAction(action, "drawerState"));
   };
 
   const validationSchema = Yup.object({
@@ -416,6 +422,8 @@ const Login = (props) => {
         </div>
       </div>
       {_modalView()}
+
+      <Icon1 handleClick={handlewClick} />
     </div>
   );
 };

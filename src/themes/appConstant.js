@@ -1,11 +1,6 @@
 // Application constants
 export const serverUrl = {
-  // http://13.41.197.155:5000/     live Url
-  // http://1.6.98.142:4009/api/v1/
-  // http://192.168.3.174:5001/
-  // http://192.168.3.173:5002/
-  // url: "http://13.41.197.155:5000/",
-  url: "http://localhost:5000/",
+  url: "https://buyuncle.com/",
 };
 
 export const captchaCode = "6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI";

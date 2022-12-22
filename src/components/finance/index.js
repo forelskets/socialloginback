@@ -8,6 +8,7 @@ import HeaderMain from "../../common/header";
 import { getMemoizedAuthenticationData } from "../../redux/selectors/authentication";
 import { drawerAction } from "../../redux/actions/authentication";
 import FooterMain from "../../common/footer";
+import Icon1 from "../../common/icon";
 import { appConstants } from "../../themes/appConstant";
 
 const Finance = (props) => {
@@ -139,7 +140,7 @@ const Finance = (props) => {
                                     <img src={images.border1} style={{ width: '400px' }} />
                                 </div> */}
                 <div className="accordion">
-                  <div className="row" style={{paddingTop:"30px"}}>
+                  <div className="row" style={{ paddingTop: "30px" }}>
                     <div
                       className="col-sm-8"
                       style={{
@@ -158,7 +159,7 @@ const Finance = (props) => {
                     </div>
                     <div className="col-sm-4"></div>
                   </div>
-                  <div className="row" style={{paddingTop:"30px"}}>
+                  <div className="row" style={{ paddingTop: "30px" }}>
                     <div className="col-sm-4"></div>
                     <div
                       className="col-sm-8"
@@ -177,7 +178,7 @@ const Finance = (props) => {
                       Apply to split your payments over 2-11 months
                     </div>
                   </div>
-                  <div className="row"style={{paddingTop:"30px"}}>
+                  <div className="row" style={{ paddingTop: "30px" }}>
                     <div
                       className="col-sm-8"
                       style={{
@@ -194,10 +195,16 @@ const Finance = (props) => {
                     >
                       Receive a fast yes/no decision
                     </div>
-                    <div className="col-sm-4" style={{paddingTop:"30px"}}></div>
+                    <div
+                      className="col-sm-4"
+                      style={{ paddingTop: "30px" }}
+                    ></div>
                   </div>
-                  <div className="row" style={{paddingTop:"30px"}}>
-                    <div className="col-sm-4" style={{paddingTop:"30px"}}></div>
+                  <div className="row" style={{ paddingTop: "30px" }}>
+                    <div
+                      className="col-sm-4"
+                      style={{ paddingTop: "30px" }}
+                    ></div>
                     <div
                       className="col-sm-8"
                       style={{
@@ -215,7 +222,7 @@ const Finance = (props) => {
                       Pay for your first month to get travelling
                     </div>
                   </div>
-                  <div className="row" style={{paddingTop:"30px"}}>
+                  <div className="row" style={{ paddingTop: "30px" }}>
                     <div
                       className="col-sm-8"
                       style={{
@@ -253,7 +260,12 @@ const Finance = (props) => {
             </div>
           </div>
           <p
-            style={{ padding: "1rem", fontWeight: 800, wordSpacing: "6px" , textAlign:"center" }}
+            style={{
+              padding: "1rem",
+              fontWeight: 800,
+              wordSpacing: "6px",
+              textAlign: "center",
+            }}
           >
             Financing is arranged by The Passenger Hub and provided by Funding
             Falcon. It will appear as Funding Falcon on your bank statement
@@ -271,14 +283,14 @@ const Finance = (props) => {
                 justifyContent: "center",
                 alignItems: "center",
               }}
-            >
-           
-            </div>
+            ></div>
             <div className="col-md-8">
-              <h2 style={{textAlign: "center"}}><b>Here's How much could you could save</b></h2>
-            <div className="fiannce_img" style={{width: "1000px"}}>
-                <img src={images.price}  />
-              </div> 
+              <h2 style={{ textAlign: "center" }}>
+                <b>Here's How much could you could save</b>
+              </h2>
+              <div className="fiannce_img" style={{ width: "1000px" }}>
+                <img src={images.price} />
+              </div>
             </div>
 
             <div
@@ -289,11 +301,8 @@ const Finance = (props) => {
                 justifyContent: "center",
                 alignItems: "center",
               }}
-            >
-             
-            </div>
+            ></div>
           </div>
-       
         </div>
       </div>
       <div className="about-text texto">
@@ -314,7 +323,13 @@ const Finance = (props) => {
                 backgroundColor: "#f0f5ff",
               }}
             >
-              <h3 style={{ padding: "1rem", textAlign: "center",fontWeight: "800" }}>
+              <h3
+                style={{
+                  padding: "1rem",
+                  textAlign: "center",
+                  fontWeight: "800",
+                }}
+              >
                 Buying your train ticket directly
               </h3>
               <p
@@ -338,7 +353,13 @@ const Finance = (props) => {
                 marginLeft: "5rem",
               }}
             >
-              <h3 style={{ padding: "1rem", textAlign: "center" , fontWeight: "800" }}>
+              <h3
+                style={{
+                  padding: "1rem",
+                  textAlign: "center",
+                  fontWeight: "800",
+                }}
+              >
                 Buying your train ticket from The Passenger Hub
               </h3>
               <p
@@ -371,11 +392,12 @@ const Finance = (props) => {
               margin: "2rem",
             }}
           >
-             <span className="button same1">Join Now</span>
+            <span className="button same1">Join Now</span>
           </div>
         </div>
       </div>
       <FooterMain />
+      <Icon1 handleClick={handlewClick} />
     </div>
   );
 };

@@ -38,7 +38,9 @@ function GoogleLogin() {
     <div className="social-login-inner-wrapper">
       <LoginSocialGoogle
         client_id={
-          "398656668658-33safng2srs6gegv3f5u7adqngfr79jt.apps.googleusercontent.com" ||
+          // "398656668658-33safng2srs6gegv3f5u7adqngfr79jt.apps.googleusercontent.com" ||
+
+          "310723912321-33dn2kc09a3blbukq8eq5cmah5m8qqd0.apps.googleusercontent.com" ||
           ""
         }
         onLoginStart={onLoginStart}

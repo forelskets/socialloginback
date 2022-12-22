@@ -17,26 +17,27 @@ import {
 import MobileSidebar from "../../common/mobilesidebar";
 import HeaderMain from "../../common/header";
 import FooterMain from "../../common/footer";
+import Icon1 from "../../common/icon";
 import { appConstants } from "../../themes/appConstant";
- 
+
 const { Option } = Select;
- 
+
 const initialState = {
   phoneNumber: "",
   email: "",
   message: "",
 };
- 
+
 const ContactUS = (props) => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
- 
+
   const [value, setValue] = React.useState(1);
- 
+
   const authenticationData = useSelector(getMemoizedAuthenticationData);
   const { drawerState, contactUsFormSuccess, contactUsFormLoader } =
     authenticationData;
- 
+
   const handlewClick = () => {
     let action = drawerState ? false : true;
     dispatch(drawerAction(action, "drawerState"));
@@ -44,12 +45,12 @@ const ContactUS = (props) => {
   useEffect(() => {
     document.title = "The PassengerHub";
     window.scrollTo(0, 0);
- 
+
     return () => {
       dispatch(updateAuthenticationState(false, "contactUsFormSuccess"));
     };
   }, []);
- 
+
   const handleInputChange = (setValue, value, name, type, length) => {
     let data = value;
     if (type === "numberField") {
@@ -67,7 +68,7 @@ const ContactUS = (props) => {
       return setValue(name, value.target.value.trimLeft());
     }
   };
- 
+
   const validationSchema = Yup.object({
     phoneNumber: Yup.string()
       .required("Please enter phone number.")
@@ -84,7 +85,7 @@ const ContactUS = (props) => {
       .required("Please enter email address."),
     message: Yup.string().required("Please enter message."),
   });
- 
+
   const handleFormSubmit = (values, { setSubmitting }) => {
     console.log("this is", values);
     if (!navigator.onLine) {
@@ -100,7 +101,7 @@ const ContactUS = (props) => {
     // console.log('on Submit hit ------', values);
     // isInternetConnected() && dispatch(LoginAction(values, history))
   };
- 
+
   const successPopup = (
     <div className="wrapper_register">
       <div class="card">
@@ -127,7 +128,7 @@ const ContactUS = (props) => {
       </div>
     </div>
   );
- 
+
   return (
     <div>
       <MobileSidebar isVisible={drawerState} handlewClick={handlewClick} />
@@ -153,7 +154,7 @@ const ContactUS = (props) => {
               </p>
             </div>
           </div>
- 
+
           <div className="row">
             <div className="col-sm-6 container small-xs-container">
               <img
@@ -161,7 +162,7 @@ const ContactUS = (props) => {
                 style={{ paddingLeft: "200px", width: "700px" }}
               />
             </div>
- 
+
             <div className="col-sm-6  container small-xs-container ">
               <Formik
                 enableReinitialize
@@ -441,7 +442,7 @@ const ContactUS = (props) => {
                           </div>
                         </div>
                       </div>
- 
+
                       <div className="form-group contact-are_you_q">
                         <label>
                           <small>
@@ -465,7 +466,7 @@ const ContactUS = (props) => {
                           <div className="color-error">{errors.are_you}</div>
                         ) : null}
                       </div>
- 
+
                       <div className="form-group mt-4">
                         <label>
                           <small>
@@ -535,14 +536,15 @@ const ContactUS = (props) => {
                           </div>
                         </div>
                       </div>
- 
+
                       <div className="form-group">
                         <label>
                           <small>
                             <b>How can we help?</b>
                           </small>
                         </label>
-                        <textarea style={{borderColor:"#c7c7c7"}}
+                        <textarea
+                          style={{ borderColor: "#c7c7c7" }}
                           className="form-control lef-contact"
                           placeholder={appConstants.how_can_help}
                           name="how_can_help"
@@ -591,11 +593,10 @@ const ContactUS = (props) => {
       ) : (
         successPopup
       )}
- 
+
       <FooterMain />
+      <Icon1 handleClick={handlewClick} />
     </div>
   );
 };
 export default ContactUS;
- 
-

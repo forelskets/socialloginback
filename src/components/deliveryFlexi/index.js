@@ -25,6 +25,7 @@ import {
 import MobileSidebar from "../../common/mobilesidebar";
 import HeaderMain from "../../common/header";
 import FooterMain from "../../common/footer";
+import Icon1 from "../../common/icon";
 import {
   Button,
   Col,
@@ -789,6 +790,8 @@ const Delivery = () => {
         </div>
       </div>
       <FooterMain />
+
+      <Icon1 handleClick={handlewClick} />
       {paymentModal()}
     </div>
   );

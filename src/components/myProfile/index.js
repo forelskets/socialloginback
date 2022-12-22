@@ -102,7 +102,7 @@ const Profile = (props) => {
                         Value={
                           userProfileDetail?.fullName
                             ? userProfileDetail?.fullName
-                            : "John Doe"
+                            : ""
                         }
                         disabled
                       />
@@ -119,7 +119,7 @@ const Profile = (props) => {
                         Value={
                           userProfileDetail?.email
                             ? userProfileDetail.email
-                            : "John@gmail.com"
+                            : ""
                         }
                         disabled
                       />
@@ -134,7 +134,7 @@ const Profile = (props) => {
                         Value={
                           userProfileDetail?.phoneNumber
                             ? `+44 ${userProfileDetail.phoneNumber}`
-                            : "+44 9999999"
+                            : ""
                         }
                         disabled
                       />
@@ -151,7 +151,7 @@ const Profile = (props) => {
                         Value={
                           userProfileDetail?.address
                             ? userProfileDetail.address
-                            : "New Street,365,LA"
+                            : ""
                         }
                         disabled
                       />
@@ -168,7 +168,7 @@ const Profile = (props) => {
                         Value={
                           userProfileDetail?.postalCode
                             ? userProfileDetail.postalCode
-                            : "1000000"
+                            : ""
                         }
                         disabled
                       />
@@ -181,9 +181,7 @@ const Profile = (props) => {
                         type="text"
                         className="form-control"
                         Value={
-                          userProfileDetail?.city
-                            ? userProfileDetail?.city
-                            : "London"
+                          userProfileDetail?.city ? userProfileDetail?.city : ""
                         }
                         disabled
                       />
@@ -213,7 +211,7 @@ const Profile = (props) => {
                         Value={
                           userProfileDetail?.billing?.firstName
                             ? userProfileDetail?.billing?.firstName
-                            : "John"
+                            : ""
                         }
                         disabled
                       />
@@ -228,7 +226,7 @@ const Profile = (props) => {
                         Value={
                           userProfileDetail?.billing?.lastName
                             ? userProfileDetail?.billing?.lastName
-                            : "Doe"
+                            : ""
                         }
                         disabled
                       />
@@ -245,7 +243,7 @@ const Profile = (props) => {
                         Value={
                           userProfileDetail?.billing?.phoneNumber
                             ? `+44 ${userProfileDetail?.billing?.phoneNumber}`
-                            : "+44 99999999"
+                            : ""
                         }
                         disabled
                       />
@@ -260,7 +258,7 @@ const Profile = (props) => {
                         Value={
                           userProfileDetail?.billing?.fax
                             ? userProfileDetail?.billing?.fax
-                            : "88888888"
+                            : ""
                         }
                         disabled
                       />
@@ -277,7 +275,7 @@ const Profile = (props) => {
                         Value={
                           userProfileDetail?.billing?.email
                             ? userProfileDetail?.billing?.email
-                            : "John@gmail.com"
+                            : ""
                         }
                         disabled
                       />
@@ -292,7 +290,7 @@ const Profile = (props) => {
                         Value={
                           userProfileDetail?.billing?.address
                             ? userProfileDetail?.billing?.address
-                            : "New Street,365,LA"
+                            : ""
                         }
                         disabled
                       />
@@ -376,7 +374,7 @@ const Profile = (props) => {
                             Value={
                               userProfileDetail?.card?.cardNumber
                                 ? `XXXX XXXX XXXX ${userProfileDetail?.card?.cardNumber}`
-                                : "88888888"
+                                : ""
                             }
                             disabled
                           />

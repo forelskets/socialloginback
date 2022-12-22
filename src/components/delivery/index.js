@@ -24,6 +24,7 @@ import {
 } from "../../redux/actions/seasonTickets";
 import MobileSidebar from "../../common/mobilesidebar";
 import HeaderMain from "../../common/header";
+import Icon1 from "../../common/icon";
 import FooterMain from "../../common/footer";
 import {
   Button,
@@ -788,6 +789,8 @@ const Delivery = () => {
         </div>
       </div>
       <FooterMain />
+
+      <Icon1 handleClick={handlewClick} />
       {paymentModal()}
     </div>
   );
